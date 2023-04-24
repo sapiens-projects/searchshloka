@@ -1,16 +1,204 @@
 <!DOCTYPE html>
 <html lan="en">
-  <head>
-    <title>Search Shloka</title>
-    <meta charset="utf-8">
-  </head>
-  
-  <body>
-    <h1>Hello World</h1>
-    <img src="./BellBottom_Maninder Buttar,Zara Khan.jpg" alt="image of something">
-    <audio controls>
-      <source src="./Teri_Mitti.mp3" type="audio/mp3">
-      Something went wrong in showing audio file
-    </audio>
-  </body>
+
+	
+	<head>
+		<meta charset="utf=16">
+		<title>Search Shloka</title>
+		<style>
+			html{
+				font-size:100%;
+			}
+			body{
+				padding:0px;
+				margin:0px;
+				border:0px;
+				font-size: 3.5vmin;
+				font-family: sans-serif;
+/*				background: grey;*/
+			}
+			main{
+				padding-left: 1%;
+				padding-right: 1%;
+			}
+			/*#siteNameHeader{
+				padding : 0px;
+				margin : 0px;
+				border : 0px;
+				background-color: #2b373c;
+				color: #FF6D60;
+				text-transform: uppercase;
+			}*/
+			#siteNameHeader p{
+				font-size: 5vmin;
+				padding : 0px;
+				padding-left: 2%;
+				margin : 0px;
+				border : 0px;
+				background-color: #2b373c;
+				color: #FF6D60;
+				text-transform: uppercase;
+/*				font-family: "Source Sans Pro";*/
+			}
+			/*#siteName{
+				padding : 0px;
+				margin : 0px;
+				border : 0px;
+				background-color: #2b373c;
+				color: #FF6D60;
+				text-transform: uppercase;
+			}*/
+			#submitButton{
+				color:blue;
+				background : yellow;
+				border:2px 0px 0px 0px;
+			}
+			#shlokaView{
+				font-size: 2.5rem;
+/*				background: #E86A33;*/
+				background: #F7D060;
+/*				color: #E86A33;*/
+				color: #263A29;
+				padding-left: 10px;
+				padding-right: 5px;
+				border-left: 10px solid;
+/*				border-width: 10px;*/
+				border-color: black;
+			}
+			#buttomSticky{
+				position:sticky;
+				position:-webkit-sticky;
+				top: 0;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<header>
+			<div id="siteNameHeader">
+				<p id="siteName">SEARCH SHLOKA</p>
+			</div>
+			<!-- Taking Input for searching shloka -->
+			<select id="profNum">
+				<option value="1Prof">1st Prof</option>
+				<option value="2Prof">2nd Prof</option>
+				<option value="3Prof">3rd Prof</option>
+			</select>
+			<select id="bookName">
+				<option value="Astanghridaya">Astanghridaya</option>
+				<option value="Vadkiye">Vadkiye</option>
+				<option value="Sanskrit">Sanskrit</option>
+				<option value="MaulikSidhhant">Maulik Sidhhant</option>
+				<option value="PadarthVigyan">Padarth Vigyan</option>
+			</select>
+			<input id="pageNum" type="number" placeholder="Page Number" >
+			<input id="shlokaNum" type="number" placeholder="Shloka Number">
+			<input id="submitButton" type="submit" name="submit" onclick="searchShloka()">
+		</header>
+		
+		<main>
+			<p>hello world</p>
+			<hr>
+			<p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p>
+			<hr>
+			<div id="shlokaView">
+				<p>ragadirogan satatanusktan aseshkayprasritan seshan,<br>
+					autsukya moha ratidhan nadhan yoyapur baidhay namostu tasmai.
+				</p>
+			</div>
+			<p>Hello World</p>
+			<br>
+			<div id="buttomSticky">
+				<audio controls>
+					<source src="./Teri_Mitti.mp3" type="audio/mpeg">
+					Your browser unable to load given audio file
+				</audio>
+			</div>
+			<br>
+			<p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p><p>अदार्निये <br> Worlddddd</p>
+			<p>hel<mark>lo Wor</mark>ld</p>
+			<!-- <img src="bird.png" alt="a bird image but image not found"> -->
+		</main>
+
+		<footer>
+		<!-- footer containt here -->
+		<a href="https://google.com" target="Blank">Go Google</a>
+		</footer>
+
+		<script>
+			'use strict'
+			function searchShloka(){
+				if ((document.querySelector('#pageNum').value == '') || (document.querySelector('#shlokaNum').value == '')) {
+					return
+				}
+				console.log(document.querySelector('#profNum').value);
+				console.log(document.querySelector('#bookName').value);
+				console.log(document.querySelector('#pageNum').value);
+				console.log(document.querySelector('#shlokaNum').value);
+				document.querySelector('#pageNum').value = null
+				document.querySelector('#shlokaNum').value = null
+			}
+			// console.log(document.querySelector("#pageNum"));
+		</script>
+	</body>
+
+
 </html>
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<title>search shloka</title>
+		<style>
+			#siteName{
+				background : black;
+				color : yellow;
+				text-transform: uppercase;
+
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<p id="siteName">search shloka.com</p>
+		<fieldset>
+			<legend>Search Shloka</legend>
+			<form>
+				<select>
+					<option value="1stProf">1st Prof</option>
+					<option value="2stProf">2nd Prof</option>
+					<option value="3stProf">3rd Prof</option>
+				</select>
+				<select>
+					<option value="Astanghridaya">Astanghridaya</option>
+					<option value="Vadkiye">Vadkiye</option>
+					<option value="Sanskrit">Sanskrit</option>
+					<option value="MaulikSidhhant">Maulik Sidhhant</option>
+					<option value="PadarthVigyan">Padarth Vigyan</option>
+				</select>
+				<input type="number" placeholder="Page Number">
+				<input type="number" placeholder="Shlok Number">
+			</form>
+			
+			
+		</fieldset>
+	</body>
+</html> -->
