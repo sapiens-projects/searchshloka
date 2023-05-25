@@ -1,0 +1,65 @@
+/*-----------------SITE NAME BANNER STYLING--------------------*/
+
+#siteNameBannerAnchor{
+	text-decoration: None;
+}
+
+#siteNameBanner{
+	font-family: sans-serif;
+	font-size: 1.6rem;
+	background: #0e1113;
+	color: #FF6D60;
+}
+
+#siteNameBanner img {
+	padding-left: 0.1em;
+	padding-top:0.1em;
+	width: 0.8em;
+	height: 0.8em;
+	display: inline;
+}
+
+#siteNameBanner p {
+	text-transform: uppercase;
+	display: inline;
+}
+
+
+
+
+
+/*----------------SITE FOOTER STYLING------------------*/
+
+#siteFooterBanner {
+	background:#181e21;
+	margin:0px;
+	padding:0px;
+}
+
+#siteFooterBanner p {
+	margin:0px;
+	padding:0px;
+}
+
+.footerHeading {
+	background: #0e1113;
+	font-size:1.3rem;
+	color:#FF6D60;
+}
+
+#siteFooterBanner a {
+	text-decoration: None;
+	text-transform: capitalize;
+	color:white;
+}
+
+.siteDevCredit {
+	background:#0e1113;
+	color:#ff8e97;
+	font-weight: bold;
+}
+
+.siteDevCredit img {
+	width:1em;
+	height:1em;
+}
