@@ -11,7 +11,7 @@ function addlyrSiteHeaderFooter(attachTo, thisFileLoc='/search_shloka/page_layer
 		</div>
 		</a>
 		
-		<div id="${bsites[0]}"><p>hello</p><p>world</p></div>
+		<div id="${bsites[0]}"></div>
 		
 		<div id="siteFooterBanner">
 			<p class="footerHeading">Quick Links</p>

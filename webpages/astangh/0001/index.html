@@ -7,13 +7,14 @@
 	<link rel='stylesheet' href='../../../configs/body_root_style.css'>
 </head>
 <body>
-	<div id='pageRoot'></div>
+	<div id='rootBody'></div>
 
-	<!--------------ADDING LAYERS------------>
+	<!--------------ADDING PAGE LAYERS------------>
 	
 	<script src="../../../page_layers/site_header_footer/site_header_footer.js"></script>
 	<script>
-		var layer2nd = addlyrSiteHeaderFooter(['pageRoot'],'../../../page_layers/site_header_footer/');
+		var layer2nd = addlyrSiteHeaderFooter(['rootBody'],'../../../page_layers/site_header_footer/');
+		document.getElementById(layer2nd[0]).innerHTML = "This is page : 0001";
 	</script>
 	<script>
 		console.log(layer2nd);
