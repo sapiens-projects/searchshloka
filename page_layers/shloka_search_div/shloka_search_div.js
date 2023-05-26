@@ -6,8 +6,6 @@ function addlyrShlokaSearchDiv(attachTo, thisFileLoc='/searchshloka/page_layers/
 
 	var code = `
 		<div id='shlokaSearchDiv'>
-		<fieldset>
-			<legend>Search Shloka</legend>
 			<select class="searchInputBox">
 				<option name="prof1" value="prof1">Prof1</option>
 				<option name="prof2" value="prof2">Prof2</option>
@@ -21,7 +19,6 @@ function addlyrShlokaSearchDiv(attachTo, thisFileLoc='/searchshloka/page_layers/
 			<input class="searchInputBox" maxlength="4" name="pageNum" type="number" placeholder="page number">
 			<input class="button" value="search">
 			<link rel="stylesheet" href="${thisFileLoc}main.css">
-		</fieldset>
 		</div>
 	`;
 
