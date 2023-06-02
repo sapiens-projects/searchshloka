@@ -1,29 +1,46 @@
-.searchInputBox {
-	width:100px;
-	padding:0px;
-	padding-left:2px;
-	margin:0px;
+#shlokaSearchDiv          {
+	margin: 0.4rem;
+	padding: 0.5rem;
+	border: solid;
+	border-radius: 3px;
+	border-color: grey;
+	display: flex;
+
+	flex-flow: row wrap;  }
+
+
+#shlokaSearchDiv .inputBox     {
+	min-width:8rem;
+	width: 8rem;
+	padding:0px 4px;
+	margin:0.2rem 0.2rem;
 	box-sizing: border-box;
 	height: 20px;
-}
+	flex: 1 1 auto;            }
 
-.button {
-	width: 100px;
+
+#shlokaSearchDiv .button {
 	border-style: solid;
-	border-width: 1.2px;
+	border-width: 1.5px;
 	border-color: blue;
 	color: blue;
 	border-radius: 4px;
 	height: 20px;
 	text-transform: uppercase;
-	text-align: center;
-}
+	font-size: 1.01rem;
+	text-align: center; }
 
-#shlokaSearchDiv {
-	margin: 10px;
-}
 
-.button:hover {
-	background: blue;
-	color: white;
-}
+#shlokaSearchDiv .button:hover {
+	background-color: #0e1113;
+	border-color: #0e1113;
+	display: none;
+	
+	color: white;  }
+
+
+#shlokaSearchDiv .button:active {
+	background-color: initial;
+	border-color: blue;
+	color: blue;  }
+
