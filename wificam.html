@@ -17,7 +17,7 @@
     </style>
     <script>
         function captureBtnClickHndl(){
-            navigator.mediaDevices.getUserMedia({video:true})
+            navigator.mediaDevices.getUserMedia({video:{facingMode: { exact: "environment" }}})
             .then((stream) => {
                 const video = document.getElementById("video");
                 video.srcObject = stream;
